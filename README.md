@@ -89,7 +89,7 @@ python	nmt.py	源语言	目标语言	要翻译的文件
 cat > nmt/raw.txt
 ```
 
-输入要翻译的句子后退出。
+输入句子后退出。
 
 运行nmt.py进行翻译：
 

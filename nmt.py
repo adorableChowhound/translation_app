@@ -5,7 +5,7 @@ from konlpy.tag import Hannanum
 
 '''
 Usage: 
-python nmt.py sentence_to_translate src_lang tgt_lang
+python nmt.py src_lang tgt_lang file_to_translate
 '''
 
 data_dir = 'nmt/data_processing/'
@@ -60,7 +60,7 @@ def nmt(src_lang, tgt_lang, file_name='nmt/raw.txt'):
     src = src_lang
     tgt = tgt_lang
     lang = ["zh", "jp", "ko"]
-    if src not in lang:
+    if src not in lang or tgt not in lang:
         print("Please choose language from zh, jp and ko")
         sys.exit()
 
