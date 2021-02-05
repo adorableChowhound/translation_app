@@ -69,6 +69,7 @@ def nmt(src_lang, tgt_lang, file_name='nmt/raw.txt'):
     os.environ['tgt'] = str(tgt)
     os.environ['raw_file'] = str(file_name)
     os.environ['data_dir'] = "nmt/data_processing"
+    os.environ['checkpoint_best'] = 'checkpoints/' + str(src) + '2' + str(tgt) + '.pt'
     os.environ['model_dir'] = 'nmt/' + str(src) + '2' + str(tgt)
     scripts = "nmt/tools/mosesdecoder/scripts"
     os.environ['DETC'] = scripts + "/recaser/detruecase.perl"
@@ -78,7 +79,7 @@ def nmt(src_lang, tgt_lang, file_name='nmt/raw.txt'):
 
     # 交互式解码
     os.system('cat ${data_dir}/norm.tok.true.bpe.txt | fairseq-interactive ${model_dir}/data-bin \
-    --path ${model_dir}/checkpoint_best.pt \
+    --path ${checkpoint_best} \
     --remove-bpe > ${data_dir}/result/bestbeam8.txt')
     # 抽取译文
     os.system('grep ^H ${data_dir}/result/bestbeam8.txt | cut -f3- > ${data_dir}/result/predict.tok.true.txt')
