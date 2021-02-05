@@ -1,0 +1,15 @@
+Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, azureml_logging=False, bf16=False, bpe=None, cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='/home/qwert/nmt/models/zh2jp/data-bin', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=False, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, reset_logging=False, scoring='bleu', seed=1, source_lang='zh', srcdict=None, suppress_crashes=False, target_lang='jp', task='translation', tensorboard_logdir=None, testpref='/data/qwert/jp/test', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='/data/qwert/jp/train', user_dir=None, validpref='/data/qwert/jp/valid', wandb_project=None, workers=1)
+[zh] Dictionary: 40872 types
+[zh] /data/qwert/jp/train.zh: 261292 sents, 2129334 tokens, 0.0% replaced by <unk>
+[zh] Dictionary: 40872 types
+[zh] /data/qwert/jp/valid.zh: 6770 sents, 54448 tokens, 0.195% replaced by <unk>
+[zh] Dictionary: 40872 types
+[zh] /data/qwert/jp/test.zh: 6786 sents, 55097 tokens, 0.131% replaced by <unk>
+[jp] Dictionary: 36024 types
+[jp] /data/qwert/jp/train.jp: 261292 sents, 2961753 tokens, 0.0% replaced by <unk>
+[jp] Dictionary: 36024 types
+[jp] /data/qwert/jp/valid.jp: 6770 sents, 75947 tokens, 0.0816% replaced by <unk>
+[jp] Dictionary: 36024 types
+[jp] /data/qwert/jp/test.jp: 6786 sents, 77085 tokens, 0.0856% replaced by <unk>
+Wrote preprocessed data to /home/qwert/nmt/models/zh2jp/data-bin
+Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, azureml_logging=False, bf16=False, bpe=None, cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='/home/qwert/nmt/models/zh2jp/data-bin', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=False, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, reset_logging=False, scoring='bleu', seed=1, source_lang='zh', srcdict=None, suppress_crashes=False, target_lang='jp', task='translation', tensorboard_logdir=None, testpref='/data/qwert/jp/test', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='/data/qwert/jp/train', user_dir=None, validpref='/data/qwert/jp/valid', wandb_project=None, workers=1)

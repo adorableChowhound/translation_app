@@ -1,0 +1,14 @@
+Namespace(align_suffix=None, alignfile=None, all_gather_list_size=16384, azureml_logging=False, bf16=False, bpe=None, cpu=False, criterion='cross_entropy', dataset_impl='mmap', destdir='/home/qwert/nmt/data/ko/data-bin', empty_cache_freq=0, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, joined_dictionary=False, log_format=None, log_interval=100, lr_scheduler='fixed', memory_efficient_bf16=False, memory_efficient_fp16=False, min_loss_scale=0.0001, model_parallel_size=1, no_progress_bar=False, nwordssrc=-1, nwordstgt=-1, only_source=False, optimizer=None, padding_factor=8, profile=False, quantization_config_path=None, reset_logging=False, scoring='bleu', seed=1, source_lang='ko', srcdict=None, suppress_crashes=False, target_lang='zh', task='translation', tensorboard_logdir=None, testpref='/home/qwert/nmt/data/ko/test', tgtdict=None, threshold_loss_scale=None, thresholdsrc=0, thresholdtgt=0, tokenizer=None, tpu=False, trainpref='/home/qwert/nmt/data/ko/train', user_dir=None, validpref='/home/qwert/nmt/data/ko/valid', wandb_project=None, workers=1)
+[ko] Dictionary: 35408 types
+[ko] /home/qwert/nmt/data/ko/train.ko: 287653 sents, 4568192 tokens, 0.0% replaced by <unk>
+[ko] Dictionary: 35408 types
+[ko] /home/qwert/nmt/data/ko/valid.ko: 7541 sents, 120338 tokens, 0.0424% replaced by <unk>
+[ko] Dictionary: 35408 types
+[ko] /home/qwert/nmt/data/ko/test.ko: 7598 sents, 121012 tokens, 0.0496% replaced by <unk>
+[zh] Dictionary: 40424 types
+[zh] /home/qwert/nmt/data/ko/train.zh: 287653 sents, 3209151 tokens, 0.0% replaced by <unk>
+[zh] Dictionary: 40424 types
+[zh] /home/qwert/nmt/data/ko/valid.zh: 7541 sents, 84563 tokens, 0.097% replaced by <unk>
+[zh] Dictionary: 40424 types
+[zh] /home/qwert/nmt/data/ko/test.zh: 7598 sents, 85321 tokens, 0.0938% replaced by <unk>
+Wrote preprocessed data to /home/qwert/nmt/data/ko/data-bin

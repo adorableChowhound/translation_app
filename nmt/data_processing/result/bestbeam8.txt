@@ -1,0 +1,67 @@
+2021-02-04 22:40:10 | INFO | fairseq_cli.interactive | {'_name': None, 'common': {'_name': None, 'no_progress_bar': False, 'log_interval': 100, 'log_format': None, 'tensorboard_logdir': None, 'wandb_project': None, 'azureml_logging': False, 'seed': 1, 'cpu': False, 'tpu': False, 'bf16': False, 'memory_efficient_bf16': False, 'fp16': False, 'memory_efficient_fp16': False, 'fp16_no_flatten_grads': False, 'fp16_init_scale': 128, 'fp16_scale_window': None, 'fp16_scale_tolerance': 0.0, 'min_loss_scale': 0.0001, 'threshold_loss_scale': None, 'user_dir': None, 'empty_cache_freq': 0, 'all_gather_list_size': 16384, 'model_parallel_size': 1, 'quantization_config_path': None, 'profile': False, 'reset_logging': False, 'suppress_crashes': False}, 'common_eval': {'_name': None, 'path': 'nmt/jp2zh/checkpoint_best.pt', 'post_process': 'subword_nmt', 'quiet': False, 'model_overrides': '{}', 'results_path': None}, 'distributed_training': {'_name': None, 'distributed_world_size': 1, 'distributed_rank': 0, 'distributed_backend': 'nccl', 'distributed_init_method': None, 'distributed_port': -1, 'device_id': 0, 'distributed_no_spawn': False, 'ddp_backend': 'pytorch_ddp', 'bucket_cap_mb': 25, 'fix_batches_to_gpus': False, 'find_unused_parameters': False, 'fast_stat_sync': False, 'heartbeat_timeout': -1, 'broadcast_buffers': False, 'slowmo_momentum': None, 'slowmo_algorithm': 'LocalSGD', 'localsgd_frequency': 3, 'nprocs_per_node': 1, 'pipeline_model_parallel': False, 'pipeline_balance': None, 'pipeline_devices': None, 'pipeline_chunks': 0, 'pipeline_encoder_balance': None, 'pipeline_encoder_devices': None, 'pipeline_decoder_balance': None, 'pipeline_decoder_devices': None, 'pipeline_checkpoint': 'never', 'zero_sharding': 'none', 'tpu': False, 'distributed_num_procs': 0}, 'dataset': {'_name': None, 'num_workers': 1, 'skip_invalid_size_inputs_valid_test': False, 'max_tokens': None, 'batch_size': 1, 'required_batch_size_multiple': 8, 'required_seq_len_multiple': 1, 'dataset_impl': None, 'data_buffer_size': 10, 'train_subset': 'train', 'valid_subset': 'valid', 'validate_interval': 1, 'validate_interval_updates': 0, 'validate_after_updates': 0, 'fixed_validation_seed': None, 'disable_validation': False, 'max_tokens_valid': None, 'batch_size_valid': None, 'curriculum': 0, 'gen_subset': 'test', 'num_shards': 1, 'shard_id': 0}, 'optimization': {'_name': None, 'max_epoch': 0, 'max_update': 0, 'stop_time_hours': 0.0, 'clip_norm': 0.0, 'sentence_avg': False, 'update_freq': [1], 'lr': [0.25], 'stop_min_lr': -1.0, 'use_bmuf': False}, 'checkpoint': {'_name': None, 'save_dir': 'checkpoints', 'restore_file': 'checkpoint_last.pt', 'finetune_from_model': None, 'reset_dataloader': False, 'reset_lr_scheduler': False, 'reset_meters': False, 'reset_optimizer': False, 'optimizer_overrides': '{}', 'save_interval': 1, 'save_interval_updates': 0, 'keep_interval_updates': -1, 'keep_last_epochs': -1, 'keep_best_checkpoints': -1, 'no_save': False, 'no_epoch_checkpoints': False, 'no_last_checkpoints': False, 'no_save_optimizer_state': False, 'best_checkpoint_metric': 'loss', 'maximize_best_checkpoint_metric': False, 'patience': -1, 'checkpoint_suffix': '', 'checkpoint_shard_count': 1, 'load_checkpoint_on_all_dp_ranks': False, 'model_parallel_size': 1, 'distributed_rank': 0}, 'bmuf': {'_name': None, 'block_lr': 1.0, 'block_momentum': 0.875, 'global_sync_iter': 50, 'warmup_iterations': 500, 'use_nbm': False, 'average_sync': False, 'distributed_world_size': 1}, 'generation': {'_name': None, 'beam': 5, 'nbest': 1, 'max_len_a': 0.0, 'max_len_b': 200, 'min_len': 1, 'match_source_len': False, 'unnormalized': False, 'no_early_stop': False, 'no_beamable_mm': False, 'lenpen': 1.0, 'unkpen': 0.0, 'replace_unk': None, 'sacrebleu': False, 'score_reference': False, 'prefix_size': 0, 'no_repeat_ngram_size': 0, 'sampling': False, 'sampling_topk': -1, 'sampling_topp': -1.0, 'constraints': None, 'temperature': 1.0, 'diverse_beam_groups': -1, 'diverse_beam_strength': 0.5, 'diversity_rate': -1.0, 'print_alignment': None, 'print_step': False, 'lm_path': None, 'lm_weight': 0.0, 'iter_decode_eos_penalty': 0.0, 'iter_decode_max_iter': 10, 'iter_decode_force_max_iter': False, 'iter_decode_with_beam': 1, 'iter_decode_with_external_reranker': False, 'retain_iter_history': False, 'retain_dropout': False, 'retain_dropout_modules': None, 'decoding_format': None, 'no_seed_provided': False}, 'eval_lm': {'_name': None, 'output_word_probs': False, 'output_word_stats': False, 'context_window': 0, 'softmax_batch': 9223372036854775807}, 'interactive': {'_name': None, 'buffer_size': 1, 'input': '-'}, 'model': None, 'task': {'_name': 'translation', 'data': 'nmt/jp2zh/data-bin', 'source_lang': None, 'target_lang': None, 'load_alignments': False, 'left_pad_source': True, 'left_pad_target': False, 'max_source_positions': 1024, 'max_target_positions': 1024, 'upsample_primary': -1, 'truncate_source': False, 'num_batch_buckets': 0, 'train_subset': 'train', 'dataset_impl': None, 'required_seq_len_multiple': 1, 'eval_bleu': False, 'eval_bleu_args': '{}', 'eval_bleu_detok': 'space', 'eval_bleu_detok_args': '{}', 'eval_tokenized_bleu': False, 'eval_bleu_remove_bpe': None, 'eval_bleu_print_samples': False}, 'criterion': {'_name': 'cross_entropy', 'sentence_avg': True}, 'optimizer': None, 'lr_scheduler': {'_name': 'fixed', 'force_anneal': None, 'lr_shrink': 0.1, 'warmup_updates': 0, 'lr': [0.25]}, 'scoring': {'_name': 'bleu', 'pad': 1, 'eos': 2, 'unk': 3}, 'bpe': None, 'tokenizer': None}
+2021-02-04 22:40:10 | INFO | fairseq.tasks.translation | [jp] dictionary: 36024 types
+2021-02-04 22:40:10 | INFO | fairseq.tasks.translation | [zh] dictionary: 40872 types
+2021-02-04 22:40:10 | INFO | fairseq_cli.interactive | loading model(s) from nmt/jp2zh/checkpoint_best.pt
+2021-02-04 22:40:14 | INFO | fairseq_cli.interactive | NOTE: hypothesis and token scores are output in base 2
+2021-02-04 22:40:14 | INFO | fairseq_cli.interactive | Type the input sentence and press return:
+S-0	彼女 は <unk> ら に 会う の を とても 楽しみ に し て い ます 。
+W-0	0.518	seconds
+H-0	-1.241282343864441	她 非常 期待 与 插 在 一起 。
+D-0	-1.241282343864441	她 非常 期待 与 插 在 一起 。
+P-0	-0.1122 -1.1283 -0.3560 -1.1038 -3.9363 -0.1851 -4.0976 -0.1302 -0.1221
+S-1	リサ は 今日 の 午後 ジョン に 会う つもり です 。
+W-1	0.292	seconds
+H-1	-0.23607751727104187	丽莎 今天下午 打算 见 约翰 。
+D-1	-0.23607751727104187	丽莎 今天下午 打算 见 约翰 。
+P-1	-0.0607 -0.8402 -0.1395 -0.3308 -0.0184 -0.1387 -0.1242
+S-2	今日 は 友達 と 会う 約束 が あり まし た 。
+W-2	0.349	seconds
+H-2	-0.37918421626091003	我 今天 和 朋友 约 好 了 见面 。
+D-2	-0.37918421626091003	我 今天 和 朋友 约 好 了 见面 。
+P-2	-0.4964 -0.7725 -0.5515 -0.1977 -0.6185 -0.0617 -0.1630 -0.6617 -0.1504 -0.1186
+S-3	今日 友人 に 会う 予定 が あり ます 。
+W-3	0.289	seconds
+H-3	-0.43529802560806274	我 打算 今天 和 朋友 见面 。
+D-3	-0.43529802560806274	我 打算 今天 和 朋友 见面 。
+P-3	-0.2448 -1.5242 -0.1033 -0.7848 -0.3233 -0.2289 -0.1519 -0.1211
+S-4	私 たち が 会う の は また の 機会 に し ます か ？
+W-4	0.255	seconds
+H-4	-0.744156002998352	我们 下次 再见 吗 ？
+D-4	-0.744156002998352	我们 下次 再见 吗 ？
+P-4	-0.1139 -1.4910 -1.7858 -0.8303 -0.1312 -0.1127
+S-5	あなた に 会う 事 が でき て 幸せ でし た 。
+W-5	0.411	seconds
+H-5	-0.2568279504776001	能 见到 你 我 感到 很 幸福 。
+D-5	-0.2568279504776001	能 见到 你 我 感到 很 幸福 。
+P-5	-0.4007 -0.2844 -0.1121 -0.3891 -0.6375 -0.0681 -0.1691 -0.1330 -0.1176
+S-6	あなた に 会う 事 が でき て 幸せ です 。
+W-6	0.377	seconds
+H-6	-0.2698611915111542	能 见到 你 我 感到 很 幸福 。
+D-6	-0.2698611915111542	能 见到 你 我 感到 很 幸福 。
+P-6	-0.3418 -0.3245 -0.1106 -0.3984 -0.7922 -0.0620 -0.1491 -0.1324 -0.1178
+S-7	私 たち は お互い に 大学 で 出会う 。
+W-7	0.377	seconds
+H-7	-0.5775352716445923	我们 在 大学 遇到 了 彼此 。
+D-7	-0.5775352716445923	我们 在 大学 遇到 了 彼此 。
+P-7	-0.0977 -1.0227 -0.0445 -0.8910 -0.2384 -1.8841 -0.3231 -0.1188
+S-8	彼女 に 会う ため に オーストラリア を 訪れ まし た 。
+W-8	0.360	seconds
+H-8	-0.24050690233707428	我 为了 见 她 去 了 澳大利亚 。
+D-8	-0.24050690233707428	我 为了 见 她 去 了 澳大利亚 。
+P-8	-0.3072 -0.1467 -0.5542 -0.0864 -0.6256 -0.1071 -0.0844 -0.1342 -0.1186
+S-9	今日 久しぶり に 会う 友達 と 食事 へ 行く 。
+W-9	0.420	seconds
+H-9	-0.6686842441558838	我 今天 久违 地 和 朋友 去 吃饭 。
+D-9	-0.6686842441558838	我 今天 久违 地 和 朋友 去 吃饭 。
+P-9	-0.3510 -0.4239 -3.4425 -0.4001 -0.4726 -0.1696 -0.5892 -0.2243 -0.4997 -0.1141
+S-10	あなた に 会う 事 を いつも 楽しみ に し て い ます 。
+W-10	0.372	seconds
+H-10	-0.6171740293502808	我 也 很 期待 和 你 见面 。
+D-10	-0.6171740293502808	我 也 很 期待 和 你 见面 。
+P-10	-0.1984 -0.5122 -0.3033 -0.0495 -2.0506 -0.1215 -2.0722 -0.1307 -0.1161
+S-11	あなた に 会う 時 まで 、 英会話 の 勉強 を 続け ます 。
+W-11	0.478	seconds
+H-11	-0.8864661455154419	我 和 你 见面 之前 会 继续 学习 对话 的 学习 。
+D-11	-0.8864661455154419	我 和 你 见面 之前 会 继续 学习 对话 的 学习 。
+P-11	-0.8311 -3.0559 -0.1215 -0.2341 -0.7874 -1.9561 -0.0541 -0.1084 -2.7110 -0.9052 -0.4605 -0.1788 -0.1199
+2021-02-04 22:40:18 | INFO | fairseq_cli.interactive | Total time: 8.568 seconds; translation time: 4.499
