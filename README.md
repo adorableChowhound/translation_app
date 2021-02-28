@@ -113,11 +113,11 @@ cat nmt/result.txt
 
 
 ## 关于app的一些文件
-上传的时候有一些问题，导致master branch这个文件夹里出现了很多跟TranslationApp这个文件夹里一样的文件
-然后在跑的时候这个文件夹的命名是Translation
-为了顺利上传，里面有很多zip文件夹，解压之后应该就是在正确的位置
-里面的readme不用管
-（主要是很多我不知道怎么删掉orz）
+- 上传的时候有一些问题，导致master branch这个文件夹里出现了很多跟TranslationApp这个文件夹里一样的文件
+- 然后在跑的时候这个文件夹的命名是Translation
+- 为了顺利上传，里面有很多zip文件夹，解压之后应该就是在正确的位置
+- 里面的readme不用管
+- （主要是很多我不知道怎么删掉orz）
 
 ## 待解决的问题
 
